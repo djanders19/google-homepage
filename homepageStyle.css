@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.container header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". image ."
+        ". form .";
+    width: 100%;
+    justify-items: center;
+}
+
+.container main img {
+    display: grid;
+    grid-area: image;
+}
+.container main form {
+    display: grid;
+    grid-area: form;
+}
+
+.user-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". search ."
+        "buttonLeft . buttonRight";
+}
+
+.user-inputs #searchbar {
+    grid-area: search;
+}
+
+.user-inputs #search {
+    grid-area: buttonLeft;
+}
+
+.user-inputs #feeling-lucky {
+    grid-area: buttonRight;
+}
+
+.container footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;  
+}
+
+.left {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;   
+}
