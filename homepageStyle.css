@@ -1,4 +1,4 @@
-body {
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -21,8 +21,93 @@ body {
 
 .header {
     display: flex;
+    align-items: center;
     padding: 6px;
     height: 60px;
+}
+
+.header-link {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.rest-of-header {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    font: 13px/27px Roboto,RobotoDraft,Arial,sans-serif;
+    z-index: 986;
+    height: 48px;
+    position: relative;
+    min-width: auto;
+}
+
+.header-right {
+    display: flex;
+}
+
+.gmail-images div {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
+}
+
+.gmail-images-link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.gmail-images-link a:hover {
+    text-decoration: underline;
+}
+
+.apps-signin {
+    display: flex;
+    align-items: center;
+}
+
+.apps {
+    margin: 10px;
+    padding: 10px;
+}
+
+.apps img {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+
+}
+
+.apps:hover {
+    background: lightgray;
+    border-radius: 50%;
+}
+
+.signin {
+    background: rgb(26, 115, 232);
+    border: 1px solid transparent;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #fff;
+    margin: 8px;
+    padding: 0.1px 7px 0.11px 7px;
+    font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: .25px;
+    line-height: 16px;
+    margin-right: 8px;
+    padding: 9px 23px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-width: 96px;
 }
 
 .image {
@@ -159,4 +244,51 @@ body {
 
 .search-button:hover {
     box-shadow: 1px 1px lightgray, -1px -1px lightgray, 1px -1px lightgray, -1px 1px lightgray;
+}
+
+.footer {
+    background: #f2f2f2;
+}
+
+.footer-internal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start;
+    order: 1;
+    min-width: 30%;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    order: 2;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    min-width: 30%;
+}
+
+.footer-link {
+    display: block;
+    padding: 15px;
+    color: #70757a;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.fill {
+    display: flex;
+    flex-grow: 1;
 }
